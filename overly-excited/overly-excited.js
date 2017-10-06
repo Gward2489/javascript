@@ -1,6 +1,6 @@
 let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the", "light", "of", "the", "moon"]
 
-let betterSentence = ["The", "wizards", "rapped", "all", "evening", "long", "grammys", "they", "won", "cheer", "they", "had", "stoke", "they", "spread"]
+let secondSentence = ["The", "wizards", "rapped", "all", "evening", "long", "grammys", "they", "won", "cheer", "they", "had", "stoke", "they", "spread"]
 
 function addExcitement (options) {
     let output = ""
@@ -20,4 +20,4 @@ function addExcitement (options) {
           
     }
 
-addExcitement({"array": betterSentence, "punctuation": "?"}) 
+addExcitement({"array": secondSentence, "punctuation": "!"}) 
