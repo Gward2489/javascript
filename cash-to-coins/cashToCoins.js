@@ -14,16 +14,16 @@ function calc (cash) {
     
         for (property in piggyBank) {
             if (property === "quarters") {
-                j = cash * .25
+                j = cash / .25
                 piggyBank.quarters = j.toFixed(0) - 1
             } else if (property === "dimes") {
-                j = cash * .10
+                j = cash / .10
                 piggyBank.dimes = j.toFixed(0)
             } else if (property === "nickels") {
-                j = cash * .05
+                j = cash / .05
                 piggyBank.nickels = j.toFixed(0)
             } else if (property === "pennies") {
-                j = cash * .01
+                j = cash / .01
                 piggyBank.pennies = j.toFixed(0)
             }
         }
