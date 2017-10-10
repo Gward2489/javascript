@@ -11,6 +11,43 @@ piggyBank = {
 
 function calc (cash) {
     let j = 0
+    
+        for (property in piggyBank) {
+            if (property === "quarters") {
+                j = cash * .25
+                piggyBank.quarters = j.toFixed(0) - 1
+            } else if (property === "dimes") {
+                j = cash * .10
+                piggyBank.dimes = j.toFixed(0)
+            } else if (property === "nickels") {
+                j = cash * .05
+                piggyBank.nickels = j.toFixed(0)
+            } else if (property === "pennies") {
+                j = cash * .01
+                piggyBank.pennies = j.toFixed(0)
+            }
+        }
+
+}
+
+calc(dollarAmount)
+
+console.log(piggyBank)
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+function calc (cash) {
+    let j = 0
     let i = 0
     let y = 0
     let x = 0
@@ -47,8 +84,7 @@ calc(dollarAmount)
 
 console.log(piggyBank)
 
-
-
+*/
 
 /* Fail #2
 function calc (cash) {
