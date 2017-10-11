@@ -1,6 +1,6 @@
 //Does not work right
 
-const dollarAmount = 450.34
+let dollarAmount = 450.34
 
 piggyBank = {
     "quarters": 0,
@@ -9,28 +9,39 @@ piggyBank = {
     "pennies": 0
 }
 
-function calc (cash) {
-    let j = 0
-    
-        for (property in piggyBank) {
-            if (property === "quarters") {
-                j = cash / .25
-                piggyBank.quarters = j.toFixed(0) - 1
-            } else if (property === "dimes") {
-                j = cash / .10
-                piggyBank.dimes = j.toFixed(0)
-            } else if (property === "nickels") {
-                j = cash / .05
-                piggyBank.nickels = j.toFixed(0)
-            } else if (property === "pennies") {
-                j = cash / .01
-                piggyBank.pennies = j.toFixed(0)
+
+  
+for (property in piggyBank) {
+        if (property === "quarters") {
+            let j = 0
+            while (dollarAmount > .25) {
+                dollarAmount -= .25
+                j++
             }
+            piggyBank.quarters = j
+        } else if (property === "dimes") {
+            let j = 0
+            while (dollarAmount > .10) {
+                dollarAmount -= .10
+                j++
+            }
+            piggyBank.dimes = j
+        } else if (property === "nickels") {
+            let j = 0
+            while (dollarAmount > .05) {
+                dollarAmount -= .05
+                j++
+            }
+            piggyBank.nickels = j
+        } else if (property === "pennies") {
+            let j = 0
+            while (dollarAmount > .01) {
+                dollarAmount -= .01
+                j++
+            }
+            piggyBank.pennies = j
         }
-
-}
-
-calc(dollarAmount)
+    }
 
 console.log(piggyBank)
 
