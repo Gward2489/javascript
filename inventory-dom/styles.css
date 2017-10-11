@@ -1,0 +1,27 @@
+.storedItems {
+    border: 4px dotted tomato;
+    margin: 1em;
+    padding: 1em;
+    background-color: teal;
+}
+
+.storedItems_name {
+    border: 2px dashed lightblue;
+    color: gold;
+    padding: 5px
+}
+
+.storedItems_location {
+    border: 4px solid lightblue;
+    color:burlywood;
+    background-color: darkslateblue;
+    padding: 3px;
+    margin: 2em;
+}
+
+.storedItems_description {
+    border: 3px solid lightgrey;
+    background-color:beige;
+    padding: .5em;
+    
+}

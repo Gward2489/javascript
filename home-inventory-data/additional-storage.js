@@ -1,9 +1,4 @@
-const loadInventory = [{}]
-
-const storedInventory = localStorage.getItem("homeInventory")
-loadInventory.push(JSON.parse(storedInventory))
-
-
+const storedInventory = JSON.parse(localStorage.getItem("homeInventory"))
 
 let unidrive = {
     "name": "Jext Telez UniDrive",
@@ -26,9 +21,10 @@ let iPad = {
     "description": "A cool tablet made by apple that I receievd as a gift for Christmas in 2015"
 }
 
-loadInventory:computers.push(iPad)
-loadInventory:instruments.push(unidrive)
-loadInventory:consoles.push(playStation)
+storedInventory.computers.push(iPad)
+storedInventory.consoles.push(playStation)
+storedInventory.instruments.push(unidrive)
 
-const updatedInv = JSON.stringify(loadInventory)
+
+const updatedInv = JSON.stringify(storedInventory)
 localStorage.setItem("homeInventory", updatedInv)
