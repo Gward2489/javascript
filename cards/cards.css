@@ -1,0 +1,15 @@
+.cardStyle {
+    border: 2px dashed pink;
+    text-align: center;
+    font-size: 2em;
+    padding: 1.4em;
+    margin: 1em;
+}
+
+.buttonStyle {
+    color: lightgreen;
+    padding: .3em;
+    font-size: 1em;
+    background-color: black;
+
+}
