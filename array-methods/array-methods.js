@@ -65,15 +65,15 @@ console.log(filteredPlanets)
 // Use the reduce method to create a sentence from the words in the following array
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
 
-//when declaring the function for .reduce, the 'currentWord' parameter represents the first array item passed
+//when declaring the function for .reduce, the 'currentWords' parameter represents the first array item passed
 //into the function, and on every pass of the function after that it will carry the new reduced value with it.
 //the 'next' parameter represents the next item in the array (following the index order) that will be
-//passed into the function and reduced into 'currentWord'
-const fullSentence = words.reduce(function (currentWord, next) {
+//passed into the function and reduced into 'currentWords'
+const fullSentence = words.reduce(function (currentWords, next) {
     //store the reductions into 'newSentence'
     //add a space between the variables  
     //to make the sentence readable
-    let newSentence = currentWord + ' ' + next
+    let newSentence = currentWords + ' ' + next
     //return the reduced sentence 
     return newSentence
 })
