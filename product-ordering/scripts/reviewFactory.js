@@ -9,7 +9,7 @@ let reviewsArray = [
         "title": "Waffles that made my grandmother cry",
         "rating": "5 out of 5",
         "author": "Janice L",
-        "comments": "Don't be mislead by the tile, my grandmother cried tears of joy when she tasted the waffles coming off this iron. She said she would never taste a waffle as fine as the waffles her long lost lover once made her. That was until I bought one of these waffle irons! Smaug has done it again, he never disapoints!"
+        "comments": "Don't be mislead by the title, my grandmother cried tears of joy when she tasted the waffles coming off this iron. She said she would never taste a waffle as fine as the waffles her long lost lover once made her. That was until I bought one of these waffle irons! Smaug has done it again, he never disapoints!"
     },
     {
         "title": "These Waffles practically cook themselves!",
