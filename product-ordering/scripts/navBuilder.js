@@ -19,11 +19,9 @@ const navMaker = function () {
 
     navArray.forEach(function (link) {
         const newItem = document.createElement("li")
-        console.log(newItem)
         newItem.className = "navList_link"
         const newLink = document.createElement("a")
         newLink.href = "#"
-        console.log(link.title)
         newLink.className = `navList_link_${link.title}`
         newLink.appendChild(document.createTextNode(link.title))
         newItem.appendChild(newLink)
