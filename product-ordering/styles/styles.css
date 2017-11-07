@@ -1,0 +1,58 @@
+body {
+    background-color: lightcoral;
+}
+
+header {
+    background-color: lightgreen;
+    box-shadow: 10px 5px 5px black;
+}
+
+.productImage {
+    display: block;
+    margin: 0 auto 0 auto;
+    padding: 1em;
+    height: 50%;
+    width: 50%; 
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    text-align: center;
+    list-style: none;
+}
+
+li {
+    display: inline;
+    margin: 0 2em 0 2em; 
+    font-size: 1.2em;
+    text-align: center;
+    background-color: lightseagreen;
+    border: .5px solid darkslateblue; 
+}
+
+a {
+    padding: 1em;
+    text-decoration: none;
+    color: darkslateblue;
+}
+
+p {
+    border: 3px dotted lightskyblue;
+    padding: 1.4em;
+}
+
+.productStyle {
+    background-color: lightgreen;
+    box-shadow: 10px 5px 5px black;
+    text-align: center;
+}
+
+.reviewClass {
+    text-align: center;
+    background-color: lightgreen;
+    box-shadow: 10px 5px 5px black;
+
+}

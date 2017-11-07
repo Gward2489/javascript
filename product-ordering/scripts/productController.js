@@ -14,13 +14,12 @@ const writeProduct = function (fantasmo) {
     let productDescription = document.createElement("p")
     productDescription.appendChild(document.createTextNode(fantasmo.description))
     let productQuantity = document.createElement("h5")
-    productQuantity.appendChild(document.createTextNode("Only " + fantasmo.quantity + " Waffle Irons Left!!"))
+    productQuantity.appendChild(document.createTextNode("Only " + fantasmo.quantity + " Left!!"))
     newProduct.appendChild(productImage)
     newProduct.appendChild(productTitle)
     newProduct.appendChild(productPrice)
     newProduct.appendChild(productQuantity)
     newProduct.appendChild(productDescription)
-    console.log(newProduct)
     productMarker.appendChild(newProduct)
 }
 
