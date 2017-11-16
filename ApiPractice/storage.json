@@ -1,0 +1,19 @@
+{
+   "gear": [
+       {
+           "name": "Les Paul",
+           "manufacturer": "Gibson",
+           "type": "electric"
+       },
+       {
+            "name": "Stratocaster",
+            "manufacturer": "Fender",
+            "type": "electric"
+        },
+        {
+            "name": "Telecaster",
+            "manufacturer": "Fender",
+            "type": "electric"
+        }
+   ] 
+}
