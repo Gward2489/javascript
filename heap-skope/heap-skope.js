@@ -84,7 +84,7 @@ const gemHeapSkope = function () {
             // the requested kilos per order. If it is less than kilos per order and greater 
             // than zero, store a negative integer equal to the remaining kilos in a variable
 
-            if (kiloCounter > 0 & kiloCounter <= kilosPerOrder) {
+            if (kiloCounter > 0 && kiloCounter <= kilosPerOrder) {
                 let subtractValue = kiloCounter * -1
                 // update the kilosSubtracted value so that it reflects the 
                 // remaining amount of kilograms
