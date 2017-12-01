@@ -1,54 +1,42 @@
 var app = angular.module("EmployeeMgmt", [])
 
 
-app.controller("EmployeeCtrl", function ($scope) {
-
-    $scope.employees = [
-        {
-            "id": 1,
-            "firstName": "Erin",
-            "lastName": "Orstrom",
-            "employmentStart": 1512140013765,
-            "employmentEnd": null
-        },
-        {
-            "id": 2,
-            "firstName": "Wayne",
-            "lastName": "Hutchinson",
-            "employmentStart": 1512139999102,
-            "employmentEnd": null
-        },
-        {
-            "id": 3,
-            "firstName": "Sarah",
-            "lastName": "Story",
-            "employmentStart": 1512139999729,
-            "employmentEnd": null
-        },
-        {
-            "id": 4,
-            "firstName": "Sulaiman",
-            "lastName": "Allan",
-            "employmentStart": 1512140294571,
-            "employmentEnd": null
-        },
-        {
-            "id": 5,
-            "firstName": "Ben",
-            "lastName": "Marks",
-            "employmentStart": 1512200192934,
-            "employmentEnd": null
+app.controller("EmployeeCtrl", function ($scope, $http) {
+    
+    
+    $http
+    .get("https://employees-dem.firebaseio.com/.json")
+    .then(
+        function(firebaseObjectOfObjects) {
+            
+            $scope.employees = firebaseObjectOfObjects.data.employees
+            
         }
-    ]
-
+    )
+    
     $scope.fireEmployee = function(employee) {
-        console.log(employee)
         employee.employmentEnd = Date.now()
+    }
+
+    $scope.createEmployee = function (firstName, lastName) {
+
+        let newId = $scope.employees.length + 1
+
+        let newEmployee = {
+            "id": newId,
+            "firstName": firstName,
+            "lastName": lastName,
+            "employementStart": Date.now(),
+            "employmentEnd": null
         }
-      
 
+        $scope.employees.push(newEmployee)
+        $scope.firstName = ""
+        $scope.lastName = ""
+    } 
 
-    });
+  
+})
 
 
 
