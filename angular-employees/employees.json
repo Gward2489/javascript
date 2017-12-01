@@ -1,0 +1,32 @@
+{
+    "employees": [
+        {
+            "id": 1,
+            "firstName": "Michael",
+            "lastName": "Jordan",
+            "employmentStart": 157216023571,
+            "employmentEnd": 0
+        },
+        {
+            "id": 2,
+            "firstName": "Jon",
+            "lastName": "Snow",
+            "employmentStart": 137216023561,
+            "employmentEnd": 0
+        },
+        {
+            "id": 3,
+            "firstName": "Dwayne",
+            "lastName": "The Rock Johnson",
+            "employmentStart": 157246723873,
+            "employmentEnd": 0
+        },
+        {
+            "id": 4,
+            "firstName": "Naked",
+            "lastName": "Cowboy",
+            "employmentStart": 157244723879,
+            "employmentEnd": 0
+        }
+    ] 
+ }
