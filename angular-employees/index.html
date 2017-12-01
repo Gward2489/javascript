@@ -18,7 +18,7 @@
 
                 <div>
                     <ul ng-repeat="employee in employees | orderBy: '-employmentStart'">
-                        <li ng-if="employee.employmentEnd === 0">{{ employee.firstName }} {{employee.lastName}}<button ng-click="fireEmployee(employee)">Fire</button></li>
+                        <li ng-if="employee.employmentEnd === 0">{{ employee.firstName }} {{employee.lastName}}<button ng-click="murderEmployee(employee)">Murder</button><button ng-click="fireEmployee(employee)">Fire</button></li>
                     </ul>
                 </div>
         </section>
