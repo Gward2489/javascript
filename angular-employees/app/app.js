@@ -1,11 +1,12 @@
-const app = angular.module("EmployeeApp", ["ngRoute"]); 
+const app = angular.module("EmployeeApp", ["ngRoute"])
+
 
 angular.module("EmployeeApp").config(function ($routeProvider) {
     /**
      * Configure all Angular application routes here
      */
-    $routeProvider.
-        when("/employees/list", {
+    $routeProvider
+        .when("/employees/list", {
             templateUrl: "app/employees/partials/list.html",
             controller: "EmployeeListCtrl"
         })
@@ -13,9 +14,10 @@ angular.module("EmployeeApp").config(function ($routeProvider) {
             templateUrl: 'app/employees/partials/create.html',
             controller: 'EmployeeCreateCtrl'
         })
-        .when('/employees/detail/:employeeId', { // <-- Magic happens here
+        .when('/employees/detail/:employeeId', {
             templateUrl: 'app/employees/partials/detail.html',
             controller: 'EmployeeDetailCtrl'
         })
         .otherwise('/employees/list')
 })
+

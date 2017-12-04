@@ -1,7 +1,21 @@
+<a href="#!/employees/new">Create employee</a>
+
+<h1>List of Current Employees</h1>
+
 <div>
     <input type="text" ng-model="query" />
 </div>
       
 <div ng-repeat="person in employees | filter: query">
-    <a href="#!/employees/{{ person.id }}">{{ person.firstName }} {{ person.lastName }}</a>
+    <a ng-if="person.employmentEnd === 0" href="#!/employees/detail/{{ person.id }}">{{ person.firstName }} {{ person.lastName }}</a>
+</div>
+
+<h1>List of Past Employees</h1>
+
+<div>
+    <input type="text" ng-model="query2" />
+</div>
+
+<div ng-repeat="person in employees | filter: query2">
+    <a ng-if="person.employmentEnd !==0" href="#!/employees/detail/{{person.id}}">{{ person.firstName }} {{ person.lastName }}</a>
 </div>

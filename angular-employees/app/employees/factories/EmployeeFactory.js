@@ -23,6 +23,28 @@ angular
                 return $http({
                     method: "GET",
                     url: `https://employees-dem.firebaseio.com/employees/${key}/.json`
+                }).then(response => {
+                    return response.data
+                })
+            }
+        },
+        "murder": {
+            value: function (key) {
+                return $http({
+                    method: "DELETE",
+                    url: `https://employees-dem.firebaseio.com/employees/${key}/.json`
+                })
+            }
+        },
+        "fire": {
+            value: function (employee, key) {
+
+                employee.employmentEnd = Date.now()
+
+                return $http({
+                    method: "PUT",
+                    url: `https://employees-dem.firebaseio.com/employees/${key}/.json`,
+                    data: employee
                 })
             }
         },
