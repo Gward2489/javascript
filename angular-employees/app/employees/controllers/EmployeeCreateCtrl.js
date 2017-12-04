@@ -1,4 +1,3 @@
-
 angular
 .module("EmployeeApp")
 .controller("EmployeeCreateCtrl", function ($scope, EmployeeFactory) {

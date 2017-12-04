@@ -18,6 +18,10 @@ angular.module("EmployeeApp").config(function ($routeProvider) {
             templateUrl: 'app/employees/partials/detail.html',
             controller: 'EmployeeDetailCtrl'
         })
+        .when('/employees/bodyCount', {
+            templateUrl: 'app/employees/partials/bodyCount.html',
+            controller: 'EmployeeBodyCountCtrl'
+        })
         .otherwise('/employees/list')
 })
 

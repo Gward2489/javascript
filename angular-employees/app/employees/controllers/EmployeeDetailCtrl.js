@@ -21,8 +21,13 @@ angular
         on the button in the view
         */
         $scope.murderEmployee = () =>
-            EmployeeFactory.murder($routeParams.employeeId).then(() =>
-                $location.url("/"));
+            EmployeeFactory
+            .murder($routeParams.employeeId)
+            .then(() => {
+                $location.url("/")
+                EmployeeFactory.bodyCount($scope.employee)
+            }
+            )
 
 
     }
