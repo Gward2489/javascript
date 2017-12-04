@@ -1,0 +1,19 @@
+{
+    "students": [
+        {
+            "name": "Jared",
+            "age": 29,
+            "color": "blue"
+        },
+        {
+            "name": "Meg",
+            "age": 29,
+            "color": "rebeccapurple"
+        },
+        {
+            "name": "Steve",
+            "age": 21,
+            "color": "goldenrod"
+        }
+    ]
+}
